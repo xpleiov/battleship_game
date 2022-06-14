@@ -2,7 +2,10 @@ from random import randint
 
 
 board = []
+turns = []
 grid = int(input("To start the game enter the grid amount you want top play with and press ENTER: "))
+tries = int(input("Also please the number of tries you want to sinck my ship and press ENTER: "))
+
 
 
 def board_print(board):
@@ -21,6 +24,7 @@ while True:
 
     if player_row == "Q" or player_col == "Q":
         print("You ended the game early")
+        tries.append([1])
         break
 
     player_row, player_col = int(player_row), int(player_col)
@@ -45,7 +49,10 @@ while True:
         print("-"*grid * 2)
         for row in board:
             print(" ".join(row))
-
-
+        turns.append([1])
+        if tries == (len(turns) - 1):
+            print("You have used all your {} tries".format(tries))
+            print("Game over")
+            break
 
 
