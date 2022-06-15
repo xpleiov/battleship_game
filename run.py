@@ -3,8 +3,8 @@ from random import randint
 
 board = []
 turns = []
-grid = int(input("To start the game enter the grid amount you want top play with and press ENTER: "))
-tries = int(input("Also please the number of tries you want to sinck my ship and press ENTER: "))
+grid = int(input("To start the game enter the grid amount you want top play with and press ENTER:\n"))
+tries = int(input("Also please the number of tries you want to sinck my ship and press ENTER: \n"))
 
 
 
@@ -20,7 +20,7 @@ row, column = randint(0,len(board) - 1), randint(0,len(board) - 1)
 # print(row, column) Used for testiing
 
 while True:
-    player_row, player_col= input("Guess Row:"), input("Guess Col:")
+    player_row, player_col= input("Guess Row:\n"), input("Guess Col:\n")
 
     if player_row == "Q" or player_col == "Q":
         print("You ended the game early")
