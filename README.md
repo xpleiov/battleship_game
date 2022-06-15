@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/100727900/173942609-5b99cfd9-2a43-429a-8c73-5d97a223740b.png)
 
-Battle ship gamge.
+Battle ship game.
 its a very simple game where you can pick and choose the grid sizes,
 and the amount of tries you want to hit the battleship that has been randomly placed.
 ----------------------------------------------------------------------------------------------------------------------------
