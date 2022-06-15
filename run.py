@@ -20,7 +20,7 @@ row, column = randint(0,len(board) - 1), randint(0,len(board) - 1)
 # print(row, column) Used for testiing
 
 while True:
-    player_row, player_col= input("Guess Row:\n"), input("Guess Col:\n")
+    player_row, player_col= int(input("Guess Row:\n")), int(input("Guess Col:\n"))
 
     if player_row == row and player_col == column:
          board[player_row][player_col] = "X"
