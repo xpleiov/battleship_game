@@ -17,7 +17,7 @@ def board_print(board):
 board_print(board)
 row, column = randint(0,len(board) - 1), randint(0,len(board) - 1)
 
-# print(row, column) Used for testiing
+#print(row, column)# Used for testiing
 
 while True:
     player_row, player_col= int(input("Guess Row:\n")), int(input("Guess Col:\n"))
@@ -37,11 +37,11 @@ while True:
         print("You have already guessed that")
         
     else:
-        print("You MISSED")
         board[player_row][player_col] = "-"
         print("-"*grid * 2)
         for row in board:
             print(" ".join(row))
+        print("You MISSED")
         turns.append([1])
         if tries == (len(turns) - 1):
             print("You have used all your {} tries".format(tries))
