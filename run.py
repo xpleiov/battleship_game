@@ -22,14 +22,7 @@ row, column = randint(0,len(board) - 1), randint(0,len(board) - 1)
 while True:
     player_row, player_col= input("Guess Row:\n"), input("Guess Col:\n")
 
-    if player_row == "Q" or player_col == "Q":
-        print("You ended the game early")
-        tries.append([1])
-        break
-
-    player_row, player_col = int(player_row), int(player_col)
-
-    elif player_row == row and player_col == column:
+    if player_row == row and player_col == column:
          board[player_row][player_col] = "X"
          print("-"*grid * 2)
          for row in board:
